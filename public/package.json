@@ -1,0 +1,17 @@
+{
+  "name": "Cleverlanes",
+  "version": "0.0.1",
+  "author": "Tibor Lakatos",
+  "description": "cleverlanes sitebuild",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-imagemin": "0.8.0",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-clean": "*"
+  }
+}

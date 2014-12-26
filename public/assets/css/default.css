@@ -1,0 +1,13 @@
+.parsley-error-list {
+  padding-top: 10px;
+  color: #b94a48;
+}
+
+.button-pull-left {
+  float: left;
+  margin-left: 5px;
+}
+
+.cell-action {
+  width: 349px;
+}
