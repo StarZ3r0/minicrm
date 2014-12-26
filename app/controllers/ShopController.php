@@ -4,7 +4,7 @@ class ShopController extends Controller {
 
 	public function index()
 	{
-    $shops = Shop::paginate(15);
+    $shops = Shop::paginate(10);
 		return View::make('shops.index')->with('shops', $shops);
 	}
 
@@ -16,7 +16,7 @@ class ShopController extends Controller {
   public function store()
   {
     $rules = array(
-      'name'=>'required', 
+      'shop_name'=>'required', 
       'opening_hours'=>'required',
       'zip' => 'required',
       'city' => 'required',
@@ -32,7 +32,7 @@ class ShopController extends Controller {
     else {
       $shop = new Shop;
       $shop->active = Input::get('active', 0);
-      $shop->name = Input::get('name');
+      $shop->shop_name = Input::get('shop_name');
       $shop->opening_hours = Input::get('opening_hours');
       $shop->zip = Input::get('zip');
       $shop->city = Input::get('city');
@@ -47,7 +47,10 @@ class ShopController extends Controller {
 
   public function show($id)
   {
-    return View::make('shops.show')->with('shop', Shop::find($id));
+    $ratings = Shop::find($id)->ratings;
+    return View::make('shops.show')
+      ->with('shop', Shop::find($id))
+      ->with('ratings', $ratings);
   }
 
   public function edit($id)
@@ -59,7 +62,7 @@ class ShopController extends Controller {
   public function update($id)
   {
     $rules = array(
-      'name'=>'required', 
+      'shop_name'=>'required', 
       'opening_hours'=>'required',
       'zip' => 'required',
       'city' => 'required',
@@ -75,7 +78,7 @@ class ShopController extends Controller {
     else {
       $shop = Shop::find($id);
       $shop->active = Input::get('active', 0);
-      $shop->name = Input::get('name');
+      $shop->shop_name = Input::get('shop_name');
       $shop->opening_hours = Input::get('opening_hours');
       $shop->zip = Input::get('zip');
       $shop->city = Input::get('city');

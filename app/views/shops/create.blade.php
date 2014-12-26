@@ -29,8 +29,8 @@
 	    <fieldset>
 				<legend>Általános adatok</legend>
 				<div class="form-group">
-					<label for="name">Bolt neve</label>
-					<input type="text" class="form-control" name="name" id="name" placeholder="Bolt neve" value="{{Input::old('name')}}" data-parsley-required="true">
+					<label for="shop_name">Bolt neve</label>
+					<input type="text" class="form-control" name="shop_name" id="shop_name" placeholder="Bolt neve" value="{{Input::old('shop_name')}}" data-parsley-required="true">
 				</div>
 				<div class="form-group">
 					<label for="opening_hours">Nyitvatartási idő</label>

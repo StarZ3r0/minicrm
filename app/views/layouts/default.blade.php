@@ -15,6 +15,7 @@
     {{ HTML::style('/assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}
     {{ HTML::style('/assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css') }}
     {{ HTML::style('/assets/vendor/fontawesome/css/font-awesome.min.css') }}
+    {{ HTML::style('/assets/vendor/raty/lib/jquery.raty.css') }}
     {{ HTML::style('/assets/css/default.css') }}
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,6 +41,7 @@
     {{ HTML::script('/assets/vendor/parsleyjs/dist/parsley.min.js') }}
     {{ HTML::script('/assets/js/parsley-i18n-hu.js') }}
     {{ HTML::script('/assets/vendor/bootbox/bootbox.js') }}
+    {{ HTML::script('/assets/vendor/raty/lib/jquery.raty.js') }}
     {{ HTML::script('/assets/js/default.js') }}
     
   </body>

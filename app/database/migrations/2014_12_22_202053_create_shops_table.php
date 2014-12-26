@@ -15,7 +15,7 @@ class CreateShopsTable extends Migration {
 		Schema::create('shops', function($table)
       {
         $table->increments('id');
-        $table->string('name');
+        $table->string('shop_name');
         $table->string('zip');
         $table->string('city');
         $table->string('address');

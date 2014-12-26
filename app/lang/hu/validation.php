@@ -86,26 +86,36 @@ return array(
 
     'custom' => array(
         'name' => array(
-            'required' => 'A bolt neve kötelező',
+            'required' => 'A név mező kötelező.',
+        ),
+        'shop_name' => array(
+            'required' => 'A bolt neve mező kötelező.',
         ),
         'opening_hours' => array(
-            'required' => 'A nyitvatartási idő kötelező',
+            'required' => 'A nyitvatartási idő mező kötelező.',
         ),
         'zip' => array(
-            'required' => 'Az írányítószám kötelező',
+            'required' => 'Az írányítószám mező kötelező.',
         ),
         'city' => array(
-            'required' => 'A város kötelező',
+            'required' => 'A város mező kötelező.',
         ),
         'address' => array(
-            'required' => 'Az utca, házszám kötelező',
+            'required' => 'Az utca, házszám mező kötelező.',
         ),
         'phone' => array(
-            'required' => 'A telefonszám kötelező',
+            'required' => 'A telefonszám mező kötelező.',
         ),
         'email' => array(
-            'required' => 'Az email cím kötelező',
+            'email' => 'Az email cím formátuma érvénytelen.',
+            'required' => 'Az email cím mező kötelező.',
             "unique" => "Ezzel az email címmel már vittek fel boltot.",
+        ),
+        'rating' => array(
+            'required' => 'Az értékelés megadása kötelező.',
+        ),
+        'comment' => array(
+            'required' => 'A vélemény mező kötelező.',
         ),
     ),
 

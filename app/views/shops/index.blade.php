@@ -20,7 +20,9 @@
         {{ Session::get('message') }}
       </div>
       @endif
-			<a href="/shops/create" class="btn btn-primary"><i class="fa fa-file"></i> Új bolt hozzáadása</a>
+			<div class="add-new-item">
+				<a href="/shops/create" class="btn btn-primary"><i class="fa fa-file"></i> Új bolt hozzáadása</a>
+			</div>
 			<div class="table-responsive">
 				<table class="table table-striped">
 					<thead>
@@ -43,7 +45,7 @@
 							@foreach ($shops as $shop)
 							<tr @if ($shop->active === 0) class="danger" @endif>
 								<td>{{ $shop->id }}</td>
-								<td>{{ $shop->name }}</td>
+								<td>{{ $shop->shop_name }}</td>
 								<td>{{ $shop->zip . ' ' . $shop->city . ' ' . $shop->address }}</td>
 								<td>{{ $shop->phone }}</td>
 								<td><a href="mailto:{{ $shop->email }}">{{ $shop->email }}</a></td>
@@ -61,6 +63,7 @@
 					</tbody>
 				</table>
 			</div>
+			<?php echo $shops->links(); ?>
 		</div>
 	</div>
 @stop

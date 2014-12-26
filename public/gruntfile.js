@@ -61,7 +61,7 @@ grunt.initConfig({
   },
   watch: {
     files: ['assets/css/*.scss'],
-    tasks: ['sass'],
+    tasks: ['sass:dev'],
     options: {
       livereload: true   
     }

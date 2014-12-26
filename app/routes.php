@@ -6,3 +6,5 @@ Route::get('/', function()
 });
 
 Route::resource('shops', 'ShopController');
+
+Route::controller('ratings', 'RatingController');

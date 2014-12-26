@@ -11,3 +11,20 @@
 .cell-action {
   width: 349px;
 }
+
+.add-new-item {
+  margin: 20px 0;
+}
+
+.rating-author {
+  display: block;
+}
+
+.raty i {
+  color: #f6cf3f;
+}
+
+.rating-show {
+  font-size: 23px;
+  color: #f6cf3f;
+}

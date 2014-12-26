@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  $(".alert-success").delay(2000).fadeOut(1000);
-
   $('.button-delete-confirm').submit(function(event) {
     event.preventDefault();
     var self = this;
@@ -23,4 +21,11 @@ $(document).ready(function () {
       }
     });
 	});
+
+  $('.raty').raty({
+    starType: 'i',
+    scoreName: 'rating',
+    score: 3,
+    hints: ['Rossz', 'Gyenge', 'Átlagos', 'Nagyon jó', 'Kiváló']
+  });
 });
