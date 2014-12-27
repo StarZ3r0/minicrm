@@ -49,11 +49,11 @@
 						</tr>
 						<tr>
 							<td>Email cím</td>
-							<td>{{ $shop->email }}</td>
+							<td><a href="mailto:{{ $shop->email }}">{{ $shop->email }}</a></td>
 						</tr>
 						<tr>
 							<td>Weboldal</td>
-							<td>{{ $shop->website }}</td>
+							<td><a href="{{ addHttp($shop->website) }}">{{ $shop->website }}</a></td>
 						</tr>
 						<tr>
 							<td>Aktív</td>
