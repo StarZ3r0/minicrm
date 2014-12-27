@@ -1,8 +1,8 @@
 {
-  "name": "Cleverlanes",
+  "name": "MiniCRM",
   "version": "0.0.1",
   "author": "Tibor Lakatos",
-  "description": "cleverlanes sitebuild",
+  "description": "MiniCRM próbafeladat",
   "private": true,
   "devDependencies": {
     "grunt": "~0.4.5",
