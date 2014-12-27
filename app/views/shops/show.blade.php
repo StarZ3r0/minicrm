@@ -29,7 +29,7 @@
 						</tr>
 						<tr>
 							<td>Bolt neve</td>
-							<td>{{ $shop->name }}</td>
+							<td>{{ $shop->shop_name }}</td>
 						</tr>
 						<tr>
 							<td>Írányítószám</td>
