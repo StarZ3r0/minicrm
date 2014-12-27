@@ -11,12 +11,17 @@
         MiniCRM próbafeladat
       @show
     </title>
-
+    
+    @if (App::environment('local'))
     {{ HTML::style('/assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}
     {{ HTML::style('/assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css') }}
     {{ HTML::style('/assets/vendor/fontawesome/css/font-awesome.min.css') }}
-    {{ HTML::style('/assets/vendor/raty/lib/jquery.raty.css') }}
+    {{ HTML::style('/assets/vendor/raty/lib/jquery.raty.min.css') }}
     {{ HTML::style('/assets/css/default.css') }}
+    @else
+    {{ HTML::style('/assets/dist/css/all.min.css') }}
+    @endif
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,7 +39,8 @@
             <p>&copy; Lakatos Tibor {{ date('Y') }}</p>
         </footer>
     </div>
-
+    
+    @if (App::environment('local'))
     {{ HTML::script('/assets/vendor/jquery/dist/jquery.min.js') }}
     {{ HTML::script('/assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}
     {{ HTML::script('/assets/js/parsley-config.js') }}
@@ -43,7 +49,10 @@
     {{ HTML::script('/assets/vendor/bootbox/bootbox.js') }}
     {{ HTML::script('/assets/vendor/raty/lib/jquery.raty.js') }}
     {{ HTML::script('/assets/js/default.js') }}
-    
+    @else
+    {{ HTML::script('/assets/dist/js/all.min.js') }}
+    @endif
+
   </body>
 </html>
 
