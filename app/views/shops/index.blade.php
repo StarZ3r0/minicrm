@@ -49,7 +49,7 @@
 								<td>{{ $shop->zip . ' ' . $shop->city . ' ' . $shop->address }}</td>
 								<td>{{ $shop->phone }}</td>
 								<td><a href="mailto:{{ $shop->email }}">{{ $shop->email }}</a></td>
-								<td><a href="{{ $shop->website }}">{{ $shop->website }}</a></td>
+								<td><a href="{{ addHttp($shop->website) }}">{{ $shop->website }}</a></td>
 								<td class="cell-action">
 									<a href="/shops/{{ $shop->id }}" class="btn btn-info pull-left"><i class="fa fa-eye"></i> Megtekintés</a>
 									<a href="/shops/{{ $shop->id }}/edit" class="btn btn-success button-pull-left"><i class="fa fa-edit"></i> Szerkesztés</a>
