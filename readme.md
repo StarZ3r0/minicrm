@@ -1,25 +1,24 @@
-## Laravel PHP Framework
+## MiniCRM tesztfeladat
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+A tesztfeladat, egy funkcionalitásában nagyon egyszerű boltértékelő
+oldal. Ami szószerint egy oldal, két blokkra osztva.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+Felső blokkban egy fix bolt alapadatai találhatóak. Célja ennek a blokknak,
+hogy a felhasználó egy képet nyerjen a boltról, valamint elérhetőségeit
+megtudja.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+Alsó blokkban találhatóak a boltra a felhasználók által leadott értékelések.
+Az értékelésnek legyen valami számszerűsített része és legyen szabadszavas
+rész is. Természetesen legyen értékelés hozzáadási lehetőség usereknek.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+A feladat megoldásának paraméterei:
+PHP (5.x) nyelven, Mysql (5.x) adatbázisban tárolt adatokkal.
 
-## Official Documentation
+Frontend: HTML5 + CSS3, lehetőleg kedvenc css/js keretrendszered használva
+elkészített reszponzív felület.
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+Értékelés szempontjai:
 
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+ - Az oldal megjelenése rendezettség, hasznosság/használhatóság szempontjából.
+ - Kódminőség: kompatkság, rendezettség.
+ - Létrehozott adatbázis.
