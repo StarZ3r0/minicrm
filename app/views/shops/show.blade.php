@@ -111,7 +111,7 @@
 	<hr>
 	<div class="row">
 		<div class="col-md-2">
-			<a href="mailto:{{ $rating->email }}" class="rating-author">{{ $rating->name }}</a>
+			<a href="mailto:{{ $rating->email }}" class="rating-author">{{{ $rating->name }}}</a>
 			{{ $rating->created_at }}
 		</div>
 		<div class="col-md-10">
@@ -124,7 +124,7 @@
 					@endif
 				@endfor
 			</div>
-			{{ $rating->comment }}
+			{{{ $rating->comment }}}
 		</div>
 	</div>
 	@endforeach
